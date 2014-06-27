@@ -1,4 +1,287 @@
 
+//Basics
+
+html, body {
+  height: 100%;
+}
+html, hmtl a{
+  width:100%;
+  font-size: 100%; 
+  -webkit-text-size-adjust: 100%; 
+  -ms-text-size-adjust: 100%;
+}
+body{
+  background-color:transparent;
+  color:#7F8289;
+  font-weight:300;
+  font-family: 'Lato', sans-serif;
+  font-size:1em;
+  line-height:20px;
+  overflow-x:hidden;
+}
+
+// Typog blanket
+
+h1,h2,h3,h4,h5,h6,p,a,input, textarea,i, span{
+  font-family: 'Lato', sans-serif;
+  font-size:12px;
+  font-weight: 300; 
+  text-align:center;
+  /*color:#FFF;*/
+  color: #000;
+  text-decoration: none;
+}
+
+// Highly specific text classes (and button class)
+
+.text-white{
+  color:rgb(255,255,255);
+}
+.text-white-hover{
+  color:rgb(255,255,255);
+}
+.text-white-hover:hover{
+  color:rgb(237,45,58) ;
+}
+.text-black-hover{
+  color:rgb(0,0,0);
+}
+.text-black-hover:hover{
+  color:rgb(237,45,58) ;
+}
+.text-red{
+  color:rgb(237,45,58);
+}
+.text-red-hover{
+  color:rgb(237,45,58);
+}
+.text-red-hover:hover{
+  color:#232323;
+}
+.text-normal{
+  font-weight: 400;
+}
+.text-bold{
+  font-weight: 700;
+}
+.text-left{
+  text-align: left;
+}
+.text-right{
+  text-align: right;
+}
+.text-center{
+  text-align: center;
+}
+.text-upper{
+  text-transform: uppercase;
+}
+.text-capital{
+  text-transform: capitalize;
+}
+.text-italic{
+  font-style: italic;
+}
+.text-35x{
+  font-size:35px;
+}
+.text-40x{
+  font-size:40px;
+}
+.text-65x{
+  font-size: 40px;
+}
+.text-50x{
+  font-size:95px;
+}
+.text-shadow-2x{
+  text-shadow: 2px 2px 2px #000;
+}
+.line-height-10x{
+  line-height: 10px;
+}
+.btn-square {
+-webkit-border-radius: 0 !important;
+-moz-border-radius: 0 !important;
+border-radius: 0 !important;
+}
+
+// Backgrounds and buttons
+
+.bg-frontpg{
+  background: url(../images/bg.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.bg-1{
+  background: url(../images/lib.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.bg-ltgray{
+  background-color: rgb(233,233,233);
+}
+.bg-red{
+  background-color:rgb(237,45,58);
+}
+.bg-red-imp{
+  background-color: rgb(237,45,58) !important;
+}
+.bg-white{
+  background-color: #FFF;
+}
+.btn-gray{
+  background-color: rgb(237,45,58)!important;
+  border-color:rgb(237,45,58)!important;
+  color:#FFF;
+  text-align: middle;
+
+}
+.btn-gray:hover{
+  background-color:#232323!important;
+  border-color:#232323!important;
+  color:#FFF;
+}
+
+// #home-page
+
+#home-page {
+  position: relative;
+  overflow: visible;
+  margin-top:0;
+  height: 100%;
+}
+#home-page .screen {
+  width:100%;
+  height:100%;
+  position: absolute;
+  background: url(../images/bg.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+#home-page .logoImg {
+  margin-top:6%;
+  margin-left:auto;
+  margin-right:auto;
+  width: 45%;
+  height:30%;
+  z-index: 2; 
+  /*background-color:#0FF;*/
+}
+#home-page .logoTxt {
+  margin-top:5%;
+  margin-left:auto; 
+  margin-right:auto;
+  width: 90%;
+  z-index: 2; 
+  /*background-color:#3df;*/
+}
+
+// .mission-page INFO: (why is this one a class and the other an id?)
+
+.mission-page {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  padding-top:6%;
+  padding-bottom:0;
+  position: relative;
+  z-index: 8;
+  overflow:hidden;  
+  background-color:#FFF;
+}
+.mission-page .mission-wrapper {
+  width:99%;
+  margin:auto;
+  overflow:hidden;
+  margin-top:1%;
+  /*background-color:#3FC;*/
+}
+.video-box{
+  width:640px;
+  margin:0 auto;
+}
+#check-Sub{
+  display: none;
+}
+
+// .project-page
+
+.project-page {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  padding-top:6%;
+  padding-bottom:2%;
+  position: relative;
+  z-index: 8;
+  overflow:hidden;  
+  background-color:#FFF;
+}
+.project-page .project-wrapper {
+  width:99%;
+  margin:auto;
+  overflow:hidden;
+  margin-top:1%;
+  /*background-color:#3FC;*/
+}
+.rule-1{
+  background: url(../images/rules1.jpg) no-repeat;
+  background-size:100%;
+}
+.rule-2{
+  background: url(../images/rules2.jpg) no-repeat;
+  background-size:100%;
+}
+.rule-3{
+  background: url(../images/rules3.jpg) no-repeat;
+  background-size:100%;
+}
+
+// .faq-page and #faqs
+
+.faq-page {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  padding-top:3%;
+  padding-bottom:0%;
+  position: relative;
+  z-index: 8;
+  overflow:hidden;  
+  background-color:#FFF;
+}
+.faq-page .faq-wrapper {
+  width:99%;
+  margin:auto;
+  overflow:hidden;
+  margin-top:1%;
+  /*background-color:#3FC;*/
+}
+#faqs h3  { cursor:pointer; }
+#faqs h3.active { color:#d74646; }
+#faqs div { height:0; overflow:hidden; position:relative; }
+#faqs div p { padding:0; margin-bottom:10px; }
+
+// footer?
+
+.footer-pg{
+  overflow: hidden;
+  padding-top:2%;
+  background-color:#232323;
+}
+
+// More stylistically specific classes
+
 .line-height-6x {
   line-height: 18px;
 }
