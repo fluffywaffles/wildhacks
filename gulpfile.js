@@ -25,16 +25,18 @@ gulp.task('scripts', function () {
 });
 
 gulp.task('jade', function () {
-  return gulp.src('app/jade/**/*.jade')
-             .pipe($.jade())
+  return gulp.src(['app/jade/**/*.jade', '!app/jade/orig.jade'])
+             .pipe($.jade({
+              pretty: true
+             }))
              .pipe(gulp.dest('app'));
 });
 
-gulp.task('html', ['styles', 'scripts', 'jade'], function () {
+gulp.task('html', ['jade', 'styles', 'scripts'], function () {
     var jsFilter = $.filter('**/*.js');
     var cssFilter = $.filter('**/*.css');
-
-    return gulp.src('app/*.html')
+  
+    gulp.src('app/*.html')
         .pipe($.useref.assets({searchPath: '{.tmp,app}'}))
         .pipe(jsFilter)
         .pipe($.uglify())
