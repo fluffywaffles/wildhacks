@@ -26,7 +26,9 @@ gulp.task('scripts', function () {
 
 gulp.task('jade', function () {
   return gulp.src('app/jade/**/*.jade')
-             .pipe($.jade())
+             .pipe($.jade({
+              pretty: true
+             }))
              .pipe(gulp.dest('app'));
 });
 
