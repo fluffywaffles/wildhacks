@@ -3,7 +3,7 @@
 1. We got mo' flow
 2. We got less problems
 
-- Slim Shady or some such
+<cite> Slim Shady or some such </cite>
 
 ### Instructions
 
