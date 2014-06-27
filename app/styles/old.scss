@@ -142,14 +142,6 @@ hr{
   -webkit-border-radius: 0 !important;
   -moz-border-radius: 0 !important;
   border-radius: 0 !important;
-  
-  //ADDED
-  
-  margin-top: 20px;
-  
-  h1 {
-    margin: 15px 10px;
-  }
 }
 
 // "Page" styles -- mostly spacing?
@@ -331,10 +323,10 @@ hr{
 }
 .bg-1{
   background: url(../images/lib.jpg) no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+  -webkit-background-size: cover !important;
+  -moz-background-size: cover !important;
+  -o-background-size: cover !important;
+  background-size: cover !important;
 }
 .bg-ltgray{
   background-color: rgb(233,233,233);

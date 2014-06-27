@@ -26,9 +26,7 @@ gulp.task('scripts', function () {
 
 gulp.task('jade', function () {
   return gulp.src('app/jade/**/*.jade')
-             .pipe($.jade({
-              pretty: true
-             }))
+             .pipe($.jade())
              .pipe(gulp.dest('app'));
 });
 
@@ -62,8 +60,7 @@ gulp.task('images', function () {
 });
 
 gulp.task('fonts', function () {
-    return $.bowerFiles()
-        .pipe($.filter('**/*.{eot,svg,ttf,woff}'))
+    return gulp.src('app/**/*.{eot,svg,ttf,woff}')
         .pipe($.flatten())
         .pipe(gulp.dest('dist/fonts'))
         .pipe($.size());
