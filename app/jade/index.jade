@@ -326,8 +326,10 @@ html
                 input(type='hidden', name='draftResponse', value='[,,"-3392338432714119197"]')
                 input(type='hidden', name='pageHistory', value='0')
                 input(type='hidden', name='fbzx', value='-3392338432714119197')
-            .modal-footer
-              input#ss-submit.btn.btn-primary.btn-gray(type='submit', name='submit', value='Submit')
+                hr
+                input#ss-submit.btn.btn-primary.btn-gray.pull-right(type='submit', name='submit', value='Submit')
+                br
+                br
       #myModal2.modal.fade(tabindex='-1', role='dialog', aria-labelledby='myModalLabel', aria-hidden='true')
         .modal-dialog(style='width:65%')
           .modal-content
@@ -336,9 +338,11 @@ html
               iframe(src='https://docs.google.com/document/d/1gMwTN9oFoJgtLpjPJ0W3UXWRT1JWsN3A-xZZjKS1YQE/pub?embedded=true', 
                      style='width:100%; height:400px;')
             .modal-footer
-              button.btn.btn-default.btn-gray(type='button', 
-                                              onclick="window.location.href='mailto:team@wildhacks.org';") Sponsor Us
+              a.btn.btn-default.btn-gray(href="mailto:team@wildhacks.org") Sponsor Us
               button.btn.btn-default.btn-gray(type='button', data-dismiss='modal') Close
+  
+  script(src='bower_components/jquery/dist/jquery.js')
+  script(src='bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/modal.js')
               
   // Google Analytics: change UA-XXXXX-X to be your site's ID.
   script.

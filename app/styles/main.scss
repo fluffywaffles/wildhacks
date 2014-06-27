@@ -17,11 +17,8 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/vendor/assets/font
 //css-based selector fade :D
 
 #faqs h3 + div {
-  -webkit-transition: max-height ease 60s, transform ease 2s;
-  -moz-transition: max-height ease 60s, transform ease 2s;
-  -ms-transition: max-height ease 60s, transform ease 2s;
-  -o-transition: max-height ease 60s, transform ease 2s;
-  transition: max-height ease 60s, transform ease 2s;
+  //use a delay
+  transition: max-height 5s ease 55s, transform 2s ease;
   height: auto;
   max-height: 0;
   margin: 0 auto;
