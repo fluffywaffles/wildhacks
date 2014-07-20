@@ -18,7 +18,7 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/vendor/assets/font
 
 #faqs h3 + div {
   //use a delay
-  transition: max-height 5s ease 55s, transform 2s ease;
+  transition: max-height ease 0.8s;
   height: auto;
   max-height: 0;
   margin: 0 auto;
@@ -26,31 +26,9 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/vendor/assets/font
   transform-style: preserve-3d;
   
   max-width: 800px;
-  
-  h4 {
-    font-size: 20px;
-      -webkit-transition: transform ease 1s;
-      -moz-transition: transform ease 1s;
-      -ms-transition: transform ease 1s;
-      -o-transition: transform ease 1s;
-      transition: transform ease 1s;
-    &:hover {
-      -webkit-transition: transform ease 0.5s;
-      -moz-transition: transform ease 0.5s;
-      -ms-transition: transform ease 0.5s;
-      -o-transition: transform ease 0.5s;
-      transition: transform ease 0.5s;
-      
-      -webkit-transform: skewX(-3deg);
-      -moz-transform: skewX(-3deg);
-      -ms-transform: skewX(-3deg);
-      -o-transform: skewX(-3deg);
-      transform: skewX(-3deg);
-    }
-  }
 }
 
-#faqs h3:hover + div {
+#faqs h3.active + div {
   max-height: 500px;
   margin: 0 auto;
   -webkit-transition: max-height ease 0.8s;
