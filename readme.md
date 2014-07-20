@@ -21,4 +21,4 @@
 
 Jordan (@Skorlir)
 
-Michael (?) (@miketychen [That's Mike Ty, like Tyson, not Mikety.])
+Michael (?) (@miketychen [~~That's Mike Ty, like Tyson,~~ That's Mike TY, not Mikety.])
