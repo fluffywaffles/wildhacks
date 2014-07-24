@@ -8,17 +8,14 @@ var $ = require('gulp-load-plugins')();
 
 gulp.task('styles', function () {
     return gulp.src('app/styles/main.scss')
-        .pipe($.rubySass({
-            style: 'expanded',
-            precision: 10
-        }))
+        .pipe($.sass())
         .pipe($.autoprefixer('last 1 version'))
         .pipe(gulp.dest('.tmp/styles'))
         .pipe($.size());
 });
 
 gulp.task('scripts', function () {
-    return gulp.src('app/scripts/**/*.js')
+    return gulp.src('app/scripts/*.js')
         .pipe($.jshint())
         .pipe($.jshint.reporter(require('jshint-stylish')))
         .pipe($.size());
@@ -33,7 +30,7 @@ gulp.task('jade', function () {
 });
 
 gulp.task('html', ['jade', 'styles', 'scripts'], function () {
-    var jsFilter = $.filter('**/*.js');
+    var jsFilter = $.filter('app/scripts/*.js');
     var cssFilter = $.filter('**/*.css');
   
     gulp.src('app/*.html')

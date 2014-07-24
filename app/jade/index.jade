@@ -7,10 +7,8 @@ html
     
     link(href='http://fonts.googleapis.com/css?family=Lato:100,300,400,100italic,300italic,400italic', rel='stylesheet', type='text/css')
     
-    // build:css styles/vendor.css
     // bower:css
     // endbower
-    // endbuild
     // build:css styles/main.css
     link(rel='stylesheet', href='styles/main.css')
     // endbuild
@@ -24,7 +22,6 @@ html
     != "<![endif]-->"
     
     #home-page
-      // TODO: now what the heeeel does this do?
       .screen
         .row
           .row
@@ -40,19 +37,22 @@ html
             .col-md-4.text-center.margin-top-5p
               a.btn.btn-primary.btn-square.btn-lg.btn-gray.padding-top-3p.padding-bottom-5p.padding-left-20p.padding-right-20p.text-center(data-toggle='modal', data-target='#myModal2')
                 h1.text-center.text-65x.line-height-10x.text-white.text-bold.text-shadow-2x SPONSOR
-          .row
+          .row(style='padding-top: 50px')
             .col-md-12.margin-top-3p
-              h1.text-white.text-shadow-2x.text-35x.text-bold
+              h1.text-white.text-shadow-2x.text-20x.text-bold
                 | Hosted by:
           .row
-            .col-md-2.col-md-offset-4
+            .col-xs-2.col-xs-offset-4
               a(href='http://www.nuisepic.com', target='_blank')
                 img.img-responsive.margin-center(src='images/EPIC-Icon.png', 
-                                                 alt='EPiC Logo')
-            .col-md-2
+                                                 alt='EPiC Logo',
+                                                 width='100px')
+            .col-xs-2
               a(href='https://www.facebook.com/HackNorthwestern?fref=ts', target='_blank')
-                img.text-left.img-responsive.margin-0-imp(src='images/HN-Icon.png', 
-                                                          alt='HackNU Logo')
+                img.img-responsive.margin-center(src='images/HN-Icon.png', 
+                                   alt='HackNU Logo',
+                                   width='100px',
+                                   style='padding-bottom: 50px')
     #mission-page
       .width-85p.margin-center.padding-bottom-3p.padding-top-3p.bg-white
         .row
@@ -350,7 +350,7 @@ html
           .modal-content
             .modal-body
               button.close(type='button', data-dismiss='modal', aria-hidden='true') &times;
-              iframe(src='https://docs.google.com/a/u.northwestern.edu/file/d/0B6OJwkOTy4qdR1EtbHJvaW00RUE/preview', 
+              iframe(src='https://docs.google.com/a/u.northwestern.edu/file/d/0B6OJwkOTy4qdWS1hUldYOXJtdmc/preview', 
                      style='width:100%; height:600px;')
             .modal-footer
               a.btn.btn-default.btn-gray(href="mailto:team@wildhacks.org") Sponsor Us
@@ -359,7 +359,9 @@ html
   script(src='bower_components/jquery/dist/jquery.js')
   script(src='bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/modal.js')
   //endbuild
+  //build:js scripts/main.js
   script(src='scripts/main.js')
+  //endbuild
   
   script.
     (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
