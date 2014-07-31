@@ -218,10 +218,11 @@ html
               h3#myModalLabel.modal-title.text-center WildHacks Application 2014
             .modal-body
               iframe#hidden_iframe(name='hidden_iframe', style='display:none;', onload="if(window.submitted) { window.location='index.html'; alert('Your application has been submitted. Thank you.'); }")
-              form#ss-form(action='https://docs.google.com/forms/d/18VozrYay19Vn4JY1WVUoa4fDgUSMiTQWrWKp5F2vukI/formResponse', 
+              // action='https://docs.google.com/forms/d/18VozrYay19Vn4JY1WVUoa4fDgUSMiTQWrWKp5F2vukI/formResponse',
+              form#ss-form( 
                            method='POST', 
                            target='hidden_iframe', 
-                           onsubmit='window.submitted=true;')
+                           onsubmit='submitRegistration()')
                 .row
                   .col-md-2
                     h4.text-black.text-right Name*
