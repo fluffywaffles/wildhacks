@@ -227,8 +227,7 @@
             </div>
             <div class="modal-body">
               <iframe id="hidden_iframe" name="hidden_iframe" style="display:none;" onload="if(window.submitted) { window.location='index.html'; alert('Your application has been submitted. Thank you.'); }"></iframe>
-              <!-- action='https://docs.google.com/forms/d/18VozrYay19Vn4JY1WVUoa4fDgUSMiTQWrWKp5F2vukI/formResponse',-->
-              <form id="ss-form" method="POST" target="hidden_iframe" onsubmit="submitRegistration()">
+              <form id="ss-form" action="https://docs.google.com/forms/d/18VozrYay19Vn4JY1WVUoa4fDgUSMiTQWrWKp5F2vukI/formResponse" method="POST" target="hidden_iframe" onsubmit="submitRegistration()">
                 <div class="row">
                   <div class="col-md-2">
                     <h4 class="text-black text-right">Name*</h4>
