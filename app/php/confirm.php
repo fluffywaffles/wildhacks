@@ -1,7 +1,11 @@
 <?php
+header('Access-Control-Allow-Origin: *');
+
 $field_name = $_POST['name'];
 $field_email = $_POST['email'];
 $field_message = $_POST['comments'];
+
+$field_name = ucfirst($field_name);
 
 $subject = 'WildHacks Application Received!';
 

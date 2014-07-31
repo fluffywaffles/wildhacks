@@ -22,7 +22,7 @@ gulp.task('scripts', function () {
 });
 
 gulp.task('migrate-php', function () {
-  return gulp.src('app/php/**/*.php')
+  return gulp.src(['app/php/**/*.php', 'app/php/.htaccess'])
              .pipe(gulp.dest('dist/server'));
 });
 
