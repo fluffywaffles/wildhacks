@@ -10,4 +10,5 @@ function submitRegistration () {
       email = document.forms['ss-form']['entry.2028281063'].value;
   
   $.post('http://wildhacks.org/server/confirm.php', {name: name, email: email});
+  window.submitted = true;
 }
