@@ -37,3 +37,20 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/vendor/assets/font
   -o-transition: max-height ease 0.8s;
   transition: max-height ease 0.8s;
 }
+
+//sponsors
+
+.sponsors {
+  h1 {
+    margin: 60px 0;
+    font-size: 50px;
+    width: 100%;
+    font-weight: bold;
+  }
+}
+
+.sponsor {
+  max-width: 200px;
+  max-height: 100px;
+  margin: 30px 15px;
+}

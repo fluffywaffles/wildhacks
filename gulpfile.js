@@ -2,6 +2,7 @@
 // generated on 2014-06-27 using generator-gulp-webapp 0.1.0
 
 var gulp = require('gulp');
+var fs   = require('fs');
 
 // load plugins
 var $ = require('gulp-load-plugins')();
@@ -29,7 +30,12 @@ gulp.task('migrate-php', function () {
 gulp.task('jade', function () {
   return gulp.src(['app/jade/**/*.jade', '!app/jade/orig.jade'])
              .pipe($.jade({
-              pretty: true
+              pretty: true,
+              locals: { sponsors: function() {
+                var logos = fs.readdirSync('app/images/sponsors').map(function(l) { return 'images/sponsors/' + l; });
+                console.log(logos);
+                return logos.filter(function(l) { return fs.statSync('app/' + l).isFile(); });
+              }() }
              }))
              .pipe(gulp.dest('app'));
 });
