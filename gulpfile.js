@@ -59,7 +59,7 @@ gulp.task('html', ['jade', 'styles', 'scripts'], function () {
 });
 
 gulp.task('images', function () {
-    return gulp.src('app/images/**/*')
+    return gulp.src('app/images/**/*.*')
         .pipe($.cache($.imagemin({
             optimizationLevel: 3,
             progressive: true,
@@ -67,6 +67,11 @@ gulp.task('images', function () {
         })))
         .pipe(gulp.dest('dist/images'))
         .pipe($.size());
+});
+
+gulp.task('clear-the-fucking-cache', function() {
+  // useful for when gulp:images decides to be a little shit
+  $.cache.clearAll();
 });
 
 gulp.task('fonts', function () {
