@@ -79,7 +79,7 @@ hr{
   color:rgb(255,255,255);
 }
 .text-white-hover:hover{
-  color:rgb(237,45,58) ;
+  color:rgb(122,201,215) ;
 }
 .text-black-hover{
   color:rgb(0,0,0);
@@ -95,6 +95,12 @@ hr{
 }
 .text-red-hover:hover{
   color:#232323;
+}
+.text-dark-green{
+  color: rgb(122,201,215);
+}
+.text-light{
+  font-weight: 300;
 }
 .text-normal{
   font-weight: 400;
@@ -120,6 +126,9 @@ hr{
 .text-italic{
   font-style: italic;
 }
+.text-30x{
+  font-size:25px;
+}
 .text-35x{
   font-size:35px;
 }
@@ -137,6 +146,12 @@ hr{
 }
 .line-height-10x{
   line-height: 10px;
+}
+.line-height-30x{
+  line-height: 50px;
+}
+.line-height-50x{
+  line-height: 60px;
 }
 .btn-square {
   -webkit-border-radius: 0 !important;
@@ -313,7 +328,27 @@ hr{
 
 
 // Backgrounds and buttons
-
+.bg-black{
+  background-color:rgb(0,0,0);
+}
+.bg-dark-green{
+  background-color:rgb(51,84,90);
+}
+.bg-gray{
+  background-color:rgba(51,84,90,.8);
+}
+.bg-frontpg-lt{
+  background: url(../images/bg.jpg) no-repeat center center fixed;
+  -webkit-filter: blur(5px);
+  -moz-filter: blur(5px);
+  -o-filter: blur(5px);
+  -ms-filter: blur(5px);
+  filter: blur(5px);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
 .bg-frontpg{
   background: url(../images/bg.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
@@ -352,7 +387,18 @@ hr{
   border-color:#232323!important;
   color:#FFF;
 }
-
+.btn-transparent{
+  background-color: transparent;
+  border-color:#FFF;
+  color: #FFF;
+  border-width: 3px;
+}
+.btn-transparent:hover{
+  background-color: rgba(255,255,255,0.5);
+  border-color:#000;
+  color:#000 !important;
+  border-width: 3px;
+}
 // #home-page
 
 #home-page {
