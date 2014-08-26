@@ -41,16 +41,41 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/vendor/assets/font
 //sponsors
 
 .sponsors {
-  h1 {
-    margin: 60px 0;
-    font-size: 50px;
+  display: inline-table;
+  table-layout: fixed;
+  width: 100%;
+  
+  .break-row {
+    display: table-row;
     width: 100%;
-    font-weight: bold;
   }
 }
 
+h1.boldh {
+  margin: 60px 0;
+  font-size: 50px;
+  width: 100%;
+  font-weight: bold;
+}
+
 .sponsor {
-  max-width: 200px;
-  max-height: 100px;
-  margin: 30px 15px;
+  width: 1%;
+  min-width: 250px;
+  display: table-cell;
+  vertical-align: middle;
+  padding: 30px;
+  
+  img {
+    max-width: 75%;
+    max-height: 80px;
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+// fix links not looking like links
+
+a.act-like-a-link {
+  color: blue;
+  font-size: 100%;
 }

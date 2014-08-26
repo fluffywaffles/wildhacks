@@ -85,11 +85,18 @@ html
               | competing against each other for cash prizes while united 
               | in their desire to turn visions into reality. Come build 
               | something great. Come be EPIC.
+
         .row
+          h1.boldh Special Thanks to Our Sponsors
           .sponsors
-            h1 Special Thanks to Our Sponsors
-            each s in sponsors
-              img.sponsor(src="#{s}")
+            each s,i in sponsors
+              if i%3 === 0
+                .break-row
+              .sponsor
+                a(href="http://#{s.substring(s.lastIndexOf('/')+1,s.lastIndexOf('.'))}"
+                  , target="_blank") 
+                  img(src="#{s}")
+
       .width-100p.bg-1.padding-top-3p.padding-bottom-3p
         .width-85p.margin-center
           .row
@@ -234,7 +241,7 @@ html
                            target='hidden_iframe', 
                            onsubmit='submitRegistration()')
                 .row
-                  .col-md-2
+                  .col-xs-2
                     h4.text-black.text-right Name*
                   .col-md-10
                     input#entry_145219669.form-control.text-left(type='text', 
@@ -246,7 +253,7 @@ html
                                                                  required='', 
                                                                  title='')
                 .row.margin-top-1p
-                  .col-md-2
+                  .col-xs-2
                     h4.text-black.text-right Email*
                   .col-md-10
                     input#entry_2028281063.form-control.text-left(type='text', 
@@ -258,7 +265,7 @@ html
                                                                   required='', 
                                                                   title='')
                 .row.margin-top-1p
-                  .col-md-2
+                  .col-xs-2
                     h4.text-black.text-right Major*
                   .col-md-10
                     input#entry_311216819.form-control.text-left(type='text', 
@@ -270,7 +277,7 @@ html
                                                                  required='', 
                                                                  title='')
                 .row.margin-top-3p
-                  .col-md-2
+                  .col-xs-2
                     h4.text-black.text-right Class*
                   .col-md-10
                     ul.ss-choices(role='radiogroup', aria-label='Class of   ')
@@ -330,7 +337,7 @@ html
                                                                                   dir='auto', 
                                                                                   aria-label='Other')
                 .row.margin-top-1p
-                  .col-md-2
+                  .col-xs-2
                     h4.text-black.text-right Team Code
                   .col-md-10
                     h5.text-black.text-left If you are planning to come as a team, please create a 5-digit team code (can be any 5 numbers, letters, or symbols), and enter it here. When your teammates apply, make sure they enter the same code.
@@ -341,7 +348,7 @@ html
                                                                  aria-label='Team Code If you are planning to come as a team, please create a 5-digit team code (can be any 5 numbers, letters, or symbols), and enter it here. When your teammates apply, make sure they enter the same code.',
                                                                  title='')
                 .row.margin-top-1p
-                  .col-md-6
+                  .col-xs-6
                     h4.text-black.text-right What state will you be coming from?
                   .col-md-6
                     input#entry_1046082049.form-control.text-left(type='text',
@@ -351,7 +358,7 @@ html
                                                                  aria-label='What state will you be coming from?',
                                                                  title='')
                 .row.margin-top-1p
-                  .col-md-2
+                  .col-xs-2
                     h4.text-black.text-right GitHub
                   .col-md-10
                     input#entry_1905973906.form-control.text-left(type='text', 
@@ -361,7 +368,7 @@ html
                                                                   aria-label='Please provide a link to your GitHub account  ', 
                                                                   title='')
                 .row.margin-top-1p
-                  .col-md-5
+                  .col-xs-5
                     h4.text-black.text-center How did you hear about us?
                   .col-md-7
                     input#entry_3758719.form-control.text-left(type='text', 
@@ -370,6 +377,12 @@ html
                                                                dir='auto', 
                                                                aria-label='How did you hear about the event?  ', 
                                                                title='')
+                .row-margin-top-1p
+                  .col-xs-12
+                    h4.text-black Please 
+                      a.act-like-a-link(href="http://www.readyforce.com/email_click/53ed4d8c5775f344939e08ac/L2kvNTNlZDRkMDgwNjdjMTEyNWIzYWU5NTJhLzUzZWQ0ZDhhNTc3NWYzNDQ5MzllMDhhNi0zdTUtNDM5YTcyNDJiZDJhNTg4NWE5MWM="
+     , target="_blank") upload your resume 
+                      | before submitting.
                 input(type='hidden', name='draftResponse', value='[,,"-3392338432714119197"]')
                 input(type='hidden', name='pageHistory', value='0')
                 input(type='hidden', name='fbzx', value='-3392338432714119197')
@@ -377,7 +390,7 @@ html
                 input#ss-submit.btn.btn-primary.btn-gray.pull-right(type='submit', name='submit', value='Submit')
                 small.pull-right
                   i(style="font-size: inherit") If you're having trouble, 
-                    a(href='mailto:team@wildhacks.org', style="font-size: 100%; color: blue") email us
+                    a.act-like-a-link(href='mailto:team@wildhacks.org') email us
                     | !&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 br
                 br
