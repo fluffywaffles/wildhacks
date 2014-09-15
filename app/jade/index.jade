@@ -26,8 +26,8 @@ html
       .screen
         .row
           .row
-            .col-md-8.col-md-offset-2.margin-top-5p
-              img(src='images/wildhacks.png', width='20%', style='margin: 0 auto').img.img-responsive
+            .col-xs-12.col-md-8.col-md-offset-2.margin-top-5p
+              img(src='images/wildhacks.png', width='25%', style='margin: 0 auto').img.img-responsive
               h1.text-50x.text-white.text-light.text-shadow-2x.line-height-50x
                 span.text-white.text-50x.text-bold WILD
                 |HACKS
@@ -57,7 +57,7 @@ html
                                    alt='HackNU Logo',
                                    width='100px',
                                    style='padding-bottom: 50px')
-    #mission-page.bg-black
+    .bg-black(style="padding: 3% 0")
       .width-85p.margin-center.padding-bottom-3p.padding-top-3p
         .row
           .col-md-12
@@ -94,7 +94,7 @@ html
           .col-md-8.col-md-offset-2.margin-top-1p
             h2.text-white.text-bold.text-upper
               | Come build something great. Come be EPIC.
-    #mission-page.bg-dark-green
+    .bg-dark-green
       .width-85p.margin-center.padding-bottom-3p.padding-top-3p
         .row
           h1.boldh.text-white Special Thanks to Our Sponsors &amp; Partners
@@ -107,95 +107,85 @@ html
                   , target="_blank") 
                   img(src="#{s}")
 
-      .width-100p.bg-black.padding-bottom-3p
-        .width-85p.margin-center
-          .row
-            .col-md-12.margin-top-3p
-              h3.text-normal.text-dark-green.text-30x  FREQUENTLY ASKED QUESTIONS
-          #faq-page.margin-top-5p
-            .faq-wrapper
-              #faqs
-                h3.text-upper.text-white-hover.text-20 Who can attend?
-                div
-                  p
-                    h4.text-white
-                      | Any and all university students from across the country are welcome. 
-                      | If you are a high school student and want to attend, please send an 
-                      | email to 
-                      a(href='mailto:team@wildhacks.org' style="color:rgb(122,201,215) !important; font-size:16px; color:#FFF") team@wildhacks.org.
-                h3.text-upper.text-white-hover.text-20 How much does the event cost?
-                div
-                  p
-                    h4.text-white
-                      | Zilch. There is no application, registration, or event fee. We will 
-                      | provide meals, drinks, and snacks for the entirety of the event.
-                h3.text-upper.text-white-hover.text-20 What&apos;s the format of the hackathon?
-                div
-                  p
-                    h4.text-white
-                      | The hackathon will last 24 hours during which teams and individuals 
-                      | will work to create web, desktop, and mobile computer projects.
-                h3.text-upper.text-white-hover.text-20 How big should teams be? Can I do it alone?
-                div
-                  p
-                    h4.text-white
-                      | Teams can be up to four people. You can certainly go it alone, 
-                      | but if you are seeking a team, we&apos;ll provide resources prior 
-                      | to the event to help you find a team with a project you&apos;re 
-                      | interested in working on.
-                h3.text-upper.text-white-hover.text-20 What should I bring?
-                div
-                  p
-                    h4.text-white
-                      | Bring your laptop and laptop charger, a valid student ID (the name on 
-                      | it should match the name with which you register for the event), and, 
-                      | of course, your vast intellect. Do not bring alcohol, other drugs, 
-                      | or anything that would get you in trouble if you were to pass through 
-                      | airport security with it (knives, etc.).
-                h3.text-upper.text-white-hover.text-20 How do I apply?
-                div
-                  p
-                    h4.text-white
-                      | Simply click on the application link and complete the application. 
-                      | Make sure to apply with your .edu email address.
-                h3.text-upper.text-white-hover.text-20
-                  | Are we allowed to build on past projects? Can I start working on 
-                  | my idea before the event?
-                div
-                  p
-                    h4.text-white
-                      | Building on past projects is strongly discouraged; in fact, 
-                      | we ask that you inform us if you will be using a significant amount 
-                      | of old code. Third-party APIs and libraries are fair game, though, so 
-                      | long as they are publicly and widely available.
-                h3.text-upper.text-white-hover.text-20 How does the judging work?
-                div
-                  p
-                    h4.text-white
-                      | The categories for judging and prizes will be: creativity, polish, 
-                      | and usefulness. There will also likely be a category for the &apos;people&apos;s 
-                      | choice&apos;. There will be a preliminary round of judging in which all projects 
-                      | will be presented simultaneously in the spirit of a science-fair. Judges will 
-                      | circulate during this time and select groups to push through to the final round of 
-                      | judging, which will take place in a stage in front of a large audience.
-                 h3.text-upper.text-white-hover.text-20
-                  | Will WildHacks be reimbursing travel to the hackathon?
-                div
-                  p
-                    h4.text-white
-                      |Unfortunately, it does not look like we are going to be able to provide travel reimbursement. We may be sending busses to select universities nearby - please contact us at 
-                      a(href='mailto:team@wildhacks.org' style="color:rgb(122,201,215) !important; font-size:16px; color:#FFF") team@wildhacks.org 
-                      | if you think you would be a good school to send a bus to. 
-                h3.text-upper.text-white-hover.text-20 
-                      | I have a question that isn&apos;t listed here. Whom should I ask?
-                div
-                  p
-                    h4.text-white 
-                      | Please email any questions to 
-                      a(href='mailto:team@wildhacks.org' style="color:rgb(122,201,215) !important; font-size:16px; color:#FFF") team@wildhacks.org
-                // end FAQ wrapper
-              // end FAQ
-            // end col-md-4
+    .width-100p.bg-black(style="padding-top: 4%")
+      .width-85p.margin-center
+        .row
+          .col-md-12.margin-top-3p
+            h3.text-normal.text-dark-green.text-30x  FREQUENTLY ASKED QUESTIONS
+        #faq-page.margin-top-5p
+          .faq-wrapper
+            #faqs
+              h3.text-upper.text-white-hover.text-20 Who can attend?
+              div
+                h4.text-white
+                  | Any and all university students from across the country are welcome. 
+                  | If you are a high school student and want to attend, please send an 
+                  | email to 
+                  a(href='mailto:team@wildhacks.org' style="color:rgb(122,201,215) !important; font-size:16px; color:#FFF") team@wildhacks.org.
+              h3.text-upper.text-white-hover.text-20 How much does the event cost?
+              div
+                h4.text-white
+                  | Zilch. There is no application, registration, or event fee. We will 
+                  | provide meals, drinks, and snacks for the entirety of the event.
+              h3.text-upper.text-white-hover.text-20 What&apos;s the format of the hackathon?
+              div
+                h4.text-white
+                  | The hackathon will last 24 hours during which teams and individuals 
+                  | will work to create web, desktop, and mobile computer projects.
+              h3.text-upper.text-white-hover.text-20 How big should teams be? Can I do it alone?
+              div
+                h4.text-white
+                  | Teams can be up to four people. You can certainly go it alone, 
+                  | but if you are seeking a team, we&apos;ll provide resources prior 
+                  | to the event to help you find a team with a project you&apos;re 
+                  | interested in working on.
+              h3.text-upper.text-white-hover.text-20 What should I bring?
+              div
+                h4.text-white
+                  | Bring your laptop and laptop charger, a valid student ID (the name on 
+                  | it should match the name with which you register for the event), and, 
+                  | of course, your vast intellect. Do not bring alcohol, other drugs, 
+                  | or anything that would get you in trouble if you were to pass through 
+                  | airport security with it (knives, etc.).
+              h3.text-upper.text-white-hover.text-20 How do I apply?
+              div
+                h4.text-white
+                  | Simply click on the application link and complete the application. 
+                  | Make sure to apply with your .edu email address.
+              h3.text-upper.text-white-hover.text-20
+                | Are we allowed to build on past projects? Can I start working on 
+                | my idea before the event?
+              div
+                h4.text-white
+                  | Building on past projects is strongly discouraged; in fact, 
+                  | we ask that you inform us if you will be using a significant amount 
+                  | of old code. Third-party APIs and libraries are fair game, though, so 
+                  | long as they are publicly and widely available.
+              h3.text-upper.text-white-hover.text-20 How does the judging work?
+              div
+                h4.text-white
+                  | The categories for judging and prizes will be: creativity, polish, 
+                  | and usefulness. There will also likely be a category for the &apos;people&apos;s 
+                  | choice&apos;. There will be a preliminary round of judging in which all projects 
+                  | will be presented simultaneously in the spirit of a science-fair. Judges will 
+                  | circulate during this time and select groups to push through to the final round of 
+                  | judging, which will take place in a stage in front of a large audience.
+               h3.text-upper.text-white-hover.text-20
+                | Will WildHacks be reimbursing travel to the hackathon?
+              div
+                h4.text-white
+                  |Unfortunately, it does not look like we are going to be able to provide travel reimbursement. We may be sending busses to select universities nearby - please contact us at 
+                  a(href='mailto:team@wildhacks.org' style="color:rgb(122,201,215) !important; font-size:16px; color:#FFF") team@wildhacks.org 
+                  | if you think you would be a good school to send a bus to. 
+              h3.text-upper.text-white-hover.text-20 
+                    | I have a question that isn&apos;t listed here. Whom should I ask?
+              div
+                h4.text-white 
+                  | Please email any questions to 
+                  a(href='mailto:team@wildhacks.org' style="color:rgb(122,201,215) !important; font-size:16px; color:#FFF") team@wildhacks.org
+              // end FAQ wrapper
+            // end FAQ
+          // end col-md-4
       .footer-pg
         .row
           .col-md-12.text-center
@@ -380,12 +370,6 @@ html
                                                                dir='auto', 
                                                                aria-label='How did you hear about the event?  ', 
                                                                title='')
-                .row-margin-top-1p
-                  .col-xs-12
-                    h4.text-black Please 
-                      a.act-like-a-link(href="http://www.readyforce.com/email_click/53ed4d8c5775f344939e08ac/L2kvNTNlZDRkMDgwNjdjMTEyNWIzYWU5NTJhLzUzZWQ0ZDhhNTc3NWYzNDQ5MzllMDhhNi0zdTUtNDM5YTcyNDJiZDJhNTg4NWE5MWM="
-     , target="_blank") upload your resume 
-                      | before submitting.
                 input(type='hidden', name='draftResponse', value='[,,"-3392338432714119197"]')
                 input(type='hidden', name='pageHistory', value='0')
                 input(type='hidden', name='fbzx', value='-3392338432714119197')

@@ -17,25 +17,20 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/vendor/assets/font
 //css-based selector fade :D
 
 #faqs h3 + div {
-  //use a delay
-  transition: max-height ease 0.8s;
   height: auto;
   max-height: 0;
   margin: 0 auto;
   transform-origin: top;
   transform-style: preserve-3d;
-  
-  max-width: 800px;
+  transition: max-height ease 0.8s 0s;
 }
 
 #faqs h3.active + div {
   max-height: 500px;
-  margin: 0 auto;
-  -webkit-transition: max-height ease 0.8s;
-  -moz-transition: max-height ease 0.8s;
-  -ms-transition: max-height ease 0.8s;
-  -o-transition: max-height ease 0.8s;
-  transition: max-height ease 0.8s;
+}
+
+#faqs {
+  padding-bottom: 15%;
 }
 
 //sponsors
@@ -78,4 +73,29 @@ h1.boldh {
 a.act-like-a-link {
   color: blue;
   font-size: 100%;
+}
+
+.footer-pg {
+  padding-top: 5%;
+}
+
+@media screen and (max-width: 650px) {
+  .text-50x {
+    font-size: 75px !important;
+  }
+  
+  .sponsor {
+    display: block;
+    float: left;
+    width: 50%;
+    min-height: 130px;
+    max-height: 130px;
+    min-width: 0;
+    padding: 5%;
+  }
+  
+  .break-row {
+    display: none !important;
+  }
+  
 }
