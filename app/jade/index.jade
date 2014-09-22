@@ -97,9 +97,36 @@ html
     .bg-dark-green
       .width-85p.margin-center.padding-bottom-3p.padding-top-3p
         .row
-          h1.boldh.text-white Special Thanks to Our Sponsors &amp; Partners
+          h1.boldh.text-white The Sponsors Powering WildHacks
+          .sponsors
+            each h,i in headlinesponsors
+              if i%3 === 0
+                .break-row
+              .sponsor
+                a(href="http://#{h.substring(h.lastIndexOf('/')+1,h.lastIndexOf('.'))}"
+                  , target="_blank") 
+                  img(src="#{h}")
+          hr
           .sponsors
             each s,i in sponsors
+              if i%3 === 0
+                .break-row
+              .sponsor
+                a(href="http://#{s.substring(s.lastIndexOf('/')+1,s.lastIndexOf('.'))}"
+                  , target="_blank") 
+                  img(src="#{s}")
+          hr
+          .sponsors
+            each s,i in inkindsponsors
+              if i%3 === 0
+                .break-row
+              .sponsor
+                a(href="http://#{s.substring(s.lastIndexOf('/')+1,s.lastIndexOf('.'))}"
+                  , target="_blank") 
+                  img(src="#{s}")
+          h1.boldh.text-white And Special Thanks To Our Partners
+          .sponsors
+            each s,i in partners
               if i%3 === 0
                 .break-row
               .sponsor
@@ -386,7 +413,7 @@ html
           .modal-content
             .modal-body
               button.close(type='button', data-dismiss='modal', aria-hidden='true') &times;
-              iframe(src='https://docs.google.com/a/u.northwestern.edu/file/d/0B6OJwkOTy4qdWS1hUldYOXJtdmc/preview', 
+              iframe(src='https://drive.google.com/file/d/0B6yPAkPW0Jp1WG9Va3RNTXNCeFE', 
                      style='width:100%; height:600px;')
             .modal-footer
               a.btn.btn-default.btn-dark-green(href="mailto:team@wildhacks.org") Sponsor Us

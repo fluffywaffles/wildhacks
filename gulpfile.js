@@ -31,8 +31,24 @@ gulp.task('jade', function () {
   return gulp.src(['app/jade/**/*.jade', '!app/jade/orig.jade'])
              .pipe($.jade({
               pretty: true,
-              locals: { sponsors: function() {
+              locals: { 
+               headlinesponsors: function() {
+                var logos = fs.readdirSync('app/images/headlinesponsors').map(function(l) { return 'images/headlinesponsors/' + l; });
+                console.log(logos);
+                return logos.filter(function(l) { return fs.statSync('app/' + l).isFile(); });
+              }(),
+              sponsors: function() {
                 var logos = fs.readdirSync('app/images/sponsors').map(function(l) { return 'images/sponsors/' + l; });
+                console.log(logos);
+                return logos.filter(function(l) { return fs.statSync('app/' + l).isFile(); });
+              }(),
+              inkindsponsors: function() {
+                var logos = fs.readdirSync('app/images/inkindsponsors').map(function(l) { return 'images/inkindsponsors/' + l; });
+                console.log(logos);
+                return logos.filter(function(l) { return fs.statSync('app/' + l).isFile(); });
+              }(),
+              partners: function() {
+                var logos = fs.readdirSync('app/images/partners').map(function(l) { return 'images/partners/' + l; });
                 console.log(logos);
                 return logos.filter(function(l) { return fs.statSync('app/' + l).isFile(); });
               }() }
