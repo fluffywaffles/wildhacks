@@ -122,7 +122,7 @@ html
               if i%3 === 0
                 .break-row
               .sponsor
-                a(href="http://#{h.substring(h.lastIndexOf('/')+1,h.lastIndexOf('.'))}"
+                a(href="http://#{h.substring(h.lastIndexOf('/')+1,h.lastIndexOf('.')).replace(/:/g, '/')}"
                   , target="_blank") 
                   img(src="#{h}")
           hr
@@ -131,7 +131,7 @@ html
               if i%3 === 0
                 .break-row
               .sponsor
-                a(href="http://#{s.substring(s.lastIndexOf('/')+1,s.lastIndexOf('.'))}"
+                a(href="http://#{s.substring(s.lastIndexOf('/')+1,s.lastIndexOf('.')).replace(/:/g, '/')}"
                   , target="_blank") 
                   img(src="#{s}")
           hr
@@ -140,7 +140,7 @@ html
               if i%3 === 0
                 .break-row
               .sponsor
-                a(href="http://#{s.substring(s.lastIndexOf('/')+1,s.lastIndexOf('.'))}"
+                a(href="http://#{s.substring(s.lastIndexOf('/')+1,s.lastIndexOf('.')).replace(/:/g, '/')}"
                   , target="_blank") 
                   img(src="#{s}")
           h1.boldh.text-white And Special Thanks To Our Partners
@@ -149,7 +149,7 @@ html
               if i%3 === 0
                 .break-row
               .sponsor
-                a(href="http://#{s.substring(s.lastIndexOf('/')+1,s.lastIndexOf('.'))}"
+                a(href="http://#{s.substring(s.lastIndexOf('/')+1,s.lastIndexOf('.')).replace(/:/g, '/')}"
                   , target="_blank") 
                   img(src="#{s}")
 
