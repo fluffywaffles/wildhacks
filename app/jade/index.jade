@@ -27,12 +27,14 @@ html
         .row
           .row
             .col-xs-12.col-md-8.col-md-offset-2.margin-top-5p
-              img(src='images/wildhacks.png', width='25%', style='margin: 0 auto').img.img-responsive
+              img(src='images/wildhacks.png', width='20%', style='margin: 0 auto').img.img-responsive
               h1.text-50x.text-white.text-light.text-shadow-2x.line-height-50x
                 span.text-white.text-50x.text-bold WILD
                 |HACKS
               h1.text-white.text-30x.text-normal.text-shadow-2x.text-upper Northwestern's largest Intercollegiate hackathon
-              h1.text-white.text-35x.text-normal.text-shadow-2x.line-height-30x November 22-23 2014
+              h1.text-white.text-35x.text-normal.text-shadow-2x November 22-23 2014
+              h1.text-white.text-35x.text-normal.text-shadow-2x from 11am to 2pm
+              h3.text-white.text-normal.text-shadow-2x Norris University Center | 1999 Campus Dr, Evanston, IL 60208
           .row
             .col-md-4.col-md-offset-2.text-center.margin-top-5p
               a.btn.btn-primary.btn-square.btn-lg.btn-transparent.padding-top-3p.padding-bottom-5p.padding-left-20p.padding-right-20p.text-center(data-toggle='modal', data-target='#myModal')
@@ -57,6 +59,23 @@ html
                                    alt='HackNU Logo',
                                    width='100px',
                                    style='padding-bottom: 50px')
+          .row
+            .col-md-12.margin-top-3p
+              h1.text-dark-green.text-shadow-2x.text-20x.text-bold
+                | Presented by:
+          .row.margin-top-1p
+            .col-xs-2.col-xs-offset-4.margin
+              a(href='http://www.mlh.io', target='_blank')
+                img.img-responsive.margin-center(src='images/keysponsors/www.mlh.io.png', 
+                                                 alt='MLH Logo',
+                                                 width='120px',
+                                                 style="padding-top: 25px;")
+            .col-xs-2
+              a(href='http://www.dell.com', target='_blank')
+                img.img-responsive.margin-center(src='images/keysponsors/www.dell.com.png', 
+                                   alt='Dell Logo',
+                                   width='100px',
+                                   style="padding-bottom: 15px")
     .bg-black(style="padding: 3% 0")
       .width-85p.margin-center.padding-bottom-3p.padding-top-3p
         .row
@@ -103,7 +122,7 @@ html
               if i%3 === 0
                 .break-row
               .sponsor
-                a(href="http://#{h.substring(h.lastIndexOf('/')+1,h.lastIndexOf('.'))}"
+                a(href="http://#{h.substring(h.lastIndexOf('/')+1,h.lastIndexOf('.')).replace(/:/g, '/')}"
                   , target="_blank") 
                   img(src="#{h}")
           hr
@@ -112,7 +131,7 @@ html
               if i%3 === 0
                 .break-row
               .sponsor
-                a(href="http://#{s.substring(s.lastIndexOf('/')+1,s.lastIndexOf('.'))}"
+                a(href="http://#{s.substring(s.lastIndexOf('/')+1,s.lastIndexOf('.')).replace(/:/g, '/')}"
                   , target="_blank") 
                   img(src="#{s}")
           hr
@@ -121,7 +140,7 @@ html
               if i%3 === 0
                 .break-row
               .sponsor
-                a(href="http://#{s.substring(s.lastIndexOf('/')+1,s.lastIndexOf('.'))}"
+                a(href="http://#{s.substring(s.lastIndexOf('/')+1,s.lastIndexOf('.')).replace(/:/g, '/')}"
                   , target="_blank") 
                   img(src="#{s}")
           h1.boldh.text-white And Special Thanks To Our Partners
@@ -130,7 +149,7 @@ html
               if i%3 === 0
                 .break-row
               .sponsor
-                a(href="http://#{s.substring(s.lastIndexOf('/')+1,s.lastIndexOf('.'))}"
+                a(href="http://#{s.substring(s.lastIndexOf('/')+1,s.lastIndexOf('.')).replace(/:/g, '/')}"
                   , target="_blank") 
                   img(src="#{s}")
 
